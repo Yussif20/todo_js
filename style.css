@@ -18,6 +18,7 @@ body {
   padding: 1rem;
   background: linear-gradient(135deg, #153677, #4e084f);
 }
+
 .todo-app {
   width: 100%;
   max-width: 54rem;
@@ -25,4 +26,18 @@ body {
   margin: 10rem auto 2rem;
   padding: 4rem 3rem 7rem;
   border-radius: 1rem;
+  h2 {
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    img {
+      width: 5rem;
+    }
+  }
+}
+.heading {
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
