@@ -1,26 +1,19 @@
-const tasks = [];
-
 const inputBox = document.querySelector("#input-box");
 const addButton = document.querySelector(".add-btn");
-const tasksContainer = document.querySelector(".tasks")
+const tasksContainer = document.querySelector(".tasks");
 
-const displayTask = (task)=>{
+const createTask = (task)=>{
     let taskEl = `
-        <h3>${task}</h3>
+        <li role="button" class="task">${task}</li>
     `
     return taskEl;
 }
 
-const tasksHandler = (tasks)=>{
-    tasks.forEach((task)=>{
-        tasksContainer.insertAdjacentHTML("afterend",displayTask(task))
-    })
-}
-
-const clickHandler = ()=>{
-    tasks.push(inputBox.value);
-    tasksHandler(tasks);
+const addTaskHandler = ()=>{
+    inputBox.value === "" ?
+                    window.alert("You must write something!"):
+                    tasksContainer.insertAdjacentHTML("afterbegin",createTask(inputBox.value));
     inputBox.value = '';
 }
 
-addButton.addEventListener("click",clickHandler)
+addButton.addEventListener("click",addTaskHandler);
