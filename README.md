@@ -25,8 +25,8 @@ All tasks are stored in the browser's local storage, meaning that your tasks wil
 
 ### Links
 
-- Repo URL: [github link](https://github.com/Yussif20/todo_list)
-- Live Site URL: [live site url](https://yussif20.github.io/todo_list/)
+- Repo URL: [github link](https://github.com/Yussif20/todo_js)
+- Live Site URL: [live site url](https://yussif20.github.io/todo_js/)
 
 ## Installation
 
